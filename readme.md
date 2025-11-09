@@ -45,28 +45,47 @@ For more information about our programs or to propose a partnership with an educ
 
 
 
+# Welfare
 
-How to clone this respo:
+## Clone Repository
+
+```bash
 git clone https://github.com/Ininsico/Welfare.git
-
-Then to activate frontend:
+Frontend Setup
+bash
+Copy code
 cd NTSSYSTEM
 npm install
 npm run dev
+Frontend runs on port 5173
 
+Backend Setup
+open a new terminal:
 
-to activate the backend:
-Open a new terminal
+bash
+Copy code
 cd NTSbackend
 npm install
-node server.js 
+node server.js
+Backend runs on port 3001
 
-to activate the backend
-open a new terminal while being in the backend and from there 
-mongosh 
+Database / MongoDB
+open another new terminal while inside the backend folder:
+
+bash
+Copy code
+mongosh
 use test-registration
-db.students.find().pretty() //for finding the user
+db.students.find().pretty()
+Important Notes
+Database schema is defined directly in MongoDB
+
+Start order matters:
+
+Turn on MongoDB
+
+Start Backend server
+
+Start Frontend server
 
 
-The database's sceheme is defined in the mongodb and from there if u want to connect this u just have to turn on the database first then run the backend server and then the frontend server
-the frontnend would be running on port 5173 and the backend upon 3001
