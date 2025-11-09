@@ -42,3 +42,31 @@ For more information about our programs or to propose a partnership with an educ
 ---
 
 *Through our work, we aim to build a future where no student has to leave school because of financial problems and where talent, not background, decides success.*
+
+
+
+
+How to clone this respo:
+git clone https://github.com/Ininsico/Welfare.git
+
+Then to activate frontend:
+cd NTSSYSTEM
+npm install
+npm run dev
+
+
+to activate the backend:
+Open a new terminal
+cd NTSbackend
+npm install
+node server.js 
+
+to activate the backend
+open a new terminal while being in the backend and from there 
+mongosh 
+use test-registration
+db.students.find().pretty() //for finding the user
+
+
+The database's sceheme is defined in the mongodb and from there if u want to connect this u just have to turn on the database first then run the backend server and then the frontend server
+the frontnend would be running on port 5173 and the backend upon 3001
